@@ -146,7 +146,7 @@ openssl pkcs12 -export \
 
 ## テストサーバーの起動
 
-`cert_files`ディレクトリ二移動して、以下のコマンドでOpenSSLのテストサーバーを起動します
+`cert_files`ディレクトリに移動して、以下のコマンドでOpenSSLのテストサーバーを起動します
 
 ```bash
 openssl s_server -cert server.crt -key server.key -CAfile ca.crt -Verify 1 -WWW -port 3000
